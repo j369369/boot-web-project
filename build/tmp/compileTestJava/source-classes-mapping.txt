@@ -1,6 +1,0 @@
-com/jwlee/bootPortfolio/springBoot/domain/posts/PostsRepositoryTest.java
- com.jwlee.bootPortfolio.springBoot.domain.posts.PostsRepositoryTest
-com/jwlee/bootPortfolio/springBoot/web/dto/HelloResponseDtoTest.java
- com.jwlee.bootPortfolio.springBoot.web.dto.HelloResponseDtoTest
-com/jwlee/bootPortfolio/springBoot/web/HelloControllerTest.java
- com.jwlee.bootPortfolio.springBoot.web.HelloControllerTest
