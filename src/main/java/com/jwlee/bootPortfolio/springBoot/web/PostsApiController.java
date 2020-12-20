@@ -18,7 +18,7 @@ public class PostsApiController {
 
     @PostMapping("/api/v1/posts")
     public long save(@RequestBody PostsSaveRequestDto reqDto, @LoginUser SessionUser user){
-        if (user.getRole().equals("GUEST")){
+        if (user!=null && user.getRole().equals("GUEST")){
             return 0;
         }else{
             return postsService.save(reqDto);
