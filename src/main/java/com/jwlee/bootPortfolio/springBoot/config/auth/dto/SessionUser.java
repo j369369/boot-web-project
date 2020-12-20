@@ -4,8 +4,10 @@ package com.jwlee.bootPortfolio.springBoot.config.auth.dto;
 import com.jwlee.bootPortfolio.springBoot.domain.user.User;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
-public class SessionUser {
+public class SessionUser implements Serializable {
     private String name;
     private String email;
     private String picture;
