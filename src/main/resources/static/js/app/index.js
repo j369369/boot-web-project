@@ -26,9 +26,14 @@ var main = {
             dataType: 'json',
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
-        }).done(function() {
-            alert('글이 등록되었습니다.');
-            window.location.href = '/';
+        }).done(function(data) {
+            if (data != 0){
+                alert('글이 등록되었습니다.');
+                window.location.href = '/';
+            }else {
+                alert("권한이 없습니다.")
+            }
+
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });

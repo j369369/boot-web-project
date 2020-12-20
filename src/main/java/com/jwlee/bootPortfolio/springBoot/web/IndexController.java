@@ -24,8 +24,6 @@ public class IndexController {
         model.addAttribute("posts",postsService.findAllDesc());
 
         if (user != null){
-            System.out.println(user.getName());
-            System.out.println(user.getEmail());
             model.addAttribute("userName",user.getName());
         }
 
@@ -34,6 +32,7 @@ public class IndexController {
 
     @GetMapping("/posts/save")
     public String postSave(){
+
         return "posts-save";
     }
 
